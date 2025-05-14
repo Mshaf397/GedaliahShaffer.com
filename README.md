@@ -1,1 +1,0 @@
-# GedaliahShaffer.com
