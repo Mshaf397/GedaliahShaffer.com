@@ -1,45 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gedaliah Shaffer - Chabad Shliach at SOIS</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gedaliah Shaffer - All Projects</title>
+<style>
+  /* Reset & basics */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #0033a0; /* deep blue */
+    color: white;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  header, footer {
+    background: #fff;
+    color: #0033a0;
+    padding: 1rem 2rem;
+  }
+  header h1, footer p {
+    margin: 0;
+  }
+  nav a {
+    margin-right: 1rem;
+    font-weight: 600;
+    color: #0033a0;
+  }
+  nav a:hover {
+    color: #0056e0;
+  }
+  main {
+    padding: 1rem 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  .dark-mode {
+    background: #121212;
+    color: #eee;
+  }
+  .dark-mode header, .dark-mode footer {
+    background: #222;
+    color: #66aaff;
+  }
+  .dark-mode nav a {
+    color: #66aaff;
+  }
+  .dark-mode nav a:hover {
+    color: #aaddff;
+  }
+  button.toggle-dark {
+    cursor: pointer;
+    background: #0033a0;
+    border: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-weight: 600;
+    float: right;
+    margin-top: -2.2rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  /* Featured event banner */
+  .event-banner {
+    display: flex;
+    background: #002080;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .event-banner img {
+    width: 150px;
+    object-fit: cover;
+  }
+  .event-banner .text {
+    padding: 1rem;
+    flex: 1;
+  }
+  /* Newsletter signup */
+  form.newsletter {
+    background: #002080;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  form.newsletter label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  form.newsletter input[type=email] {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 0.5rem;
+  }
+  form.newsletter button {
+    background: #0056e0;
+    border: none;
+    padding: 0.6rem 1rem;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  /* Contact form */
+  form.contact {
+    background: #002080;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  form.contact label {
+    display: block;
+    margin: 0.5rem 0 0.3rem;
+  }
+  form.contact input, form.contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+  }
+  form.contact button {
+    margin-top: 0.5rem;
+    background: #0056e0;
+    border: none;
+    padding: 0.6rem 1rem;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  /* Section placeholders styling */
+  .placeholder {
+    background: #0047b3;
+    padding: 1rem;
+    border-radius: 6px;
+    font-style: italic;
+    color: #cce0ff;
+  }
+  /* Card layouts for phone database etc. */
+  .card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+  }
+  .card {
+    background: #002080;
+    border-radius: 6px;
+    padding: 1rem;
+  }
+  .footer-links {
+    margin-top: 0.5rem;
+  }
+  .footer-links a {
+    margin-right: 1rem;
+  }
+</style>
 </head>
 <body>
+<header>
+  <h1>Gedaliah Shaffer</h1>
+  <button class="toggle-dark" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#music">Music</a>
+    <a href="#chabad">Chabad</a>
+    <a href="#fundraiser">Fundraiser</a>
+    <a href="#phones">Phone DB</a>
+    <a href="#extras">Extras</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
 
-    <!-- Header -->
-    <header>
-        <h1>Gedaliah Shaffer</h1>
-        <p>16 | Chabad Shliach at SOIS</p>
-    </header>
+  <section id="home" tabindex="0">
+    <h2>Welcome</h2>
+    <p>Hi, I'm Gedaliah Shaffer, 16 years old, Chabad shliach at SOIS. This website contains all the projects and interests I've worked on, including music, community events, technology, and fun extras.</p>
+    <blockquote>“Everything G-d does is for the best.”</blockquote>
+  </section>
 
-    <!-- Navigation -->
-    
-            <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="jewish-resources.html">Jewish Resources</a></li>
-    </ul>
-</nav>
-        
+  <section id="music" tabindex="0">
+    <h2>Music Projects</h2>
+    <div class="placeholder">
+      <p><strong>Microtonal Synth & Ear Training:</strong> Interactive microtonal synthesizer with custom tunings, Just Intonation, and multiple temperaments. (Coming soon!)</p>
+      <p>Exercises for identifying intervals, scales, chords.</p>
+    </div>
+  </section>
 
-    <!-- Main Content -->
-    <main>
-        <h2>Welcome to My Personal Website</h2>
-        <p>“Everything G-d does is for the best.”</p>
-        <p>Explore my projects, connect with me on YouTube, or get in touch at askchabadsois@gmail.com.</p>
-    </main>
+  <section id="chabad" tabindex="0">
+    <h2>Chabad Community</h2>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Gedaliah Shaffer. All rights reserved.</p>
-        <p><a href="https://www.youtube.com/@mistershaf9648" target="_blank">YouTube: @mistershaf9648</a></p>
-    </footer>
+    <div class="event-banner" aria-label="Featured Event Banner">
+      <img src="https://via.placeholder.com/150x100?text=Event+Image" alt="Featured Event" />
+      <div class="text">
+        <h3>Upcoming Event: Lag BaOmer Bonfire</h3>
+        <p>Join us on May 25th for a community bonfire and celebration. Learn about the history, enjoy music, and food!</p>
+      </div>
+    </div>
 
-    <script src="scripts.js"></script>
+    <div class="placeholder" aria-label="Newsletter Signup">
+      <h3>Newsletter Signup</h3>
+      <form class="newsletter" onsubmit="alert('Newsletter signup coming soon!'); return false;">
+        <label for="email-newsletter">Your Email:</label>
+        <input type="email" id="email-newsletter" name="email-newsletter" placeholder="email@example.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="placeholder" aria-label="Learning Resources Articles">
+      <h3>Learning Resources</h3>
+      <ul>
+        <li><a href="#article1" tabindex="0">Understanding the Parsha - Basics</a></li>
+        <li><a href="#article2" tabindex="0">History of Chabad Movement</a></li>
+        <li><a href="#article3" tabindex="0">Jewish Holidays Overview</a></li>
+      </ul>
+      <p><em>Click an article title to read more (pages coming soon).</em></p>
+    </div>
+
+    <div class="placeholder" aria-label="Today in Jewish History">
+      <h3>Today in Jewish History</h3>
+      <p><em>Automated daily Jewish history facts will be shown here.</em></p>
+    </div>
+  </section>
+
+  <section id="fundraiser" tabindex="0">
+    <h2>Fundraiser</h2>
+    <div class="placeholder">
+      <p>Help support our cause!</p>
+      <p><strong>Apple Cash Link:</strong> <a href="#" tabindex="0">Send Apple Cash</a></p>
+      <p><strong>QR Code:</strong></p>
+      <img src="https://via.placeholder.com/150?text=QR+Code" alt="QR code for fundraiser donation" />
+    </div>
+  </section>
+
+  <section id="phones" tabindex="0">
+    <h2>Phone Database</h2>
+    <div class="placeholder">
+      <p>Manage phones, smartwatches, and tablets with specs, scores, and images.</p>
+      <p>CRUD functionality and search/sort features will be implemented here.</p>
+    </div>
+  </section>
+
+  <section id="extras" tabindex="0">
+    <h2>Extras & Fun</h2>
+    <div class="placeholder">
+      <p>Access fun extras and interactive quizzes.</p>
+      <ul>
+        <li><a href="#torahquiz" tabindex="0">Interactive Torah Quiz (Coming soon!)</a></li>
+        <li>Grounding techniques list and other tools.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" tabindex="0">
+    <h2>Contact Me</h2>
+    <form class="contact" onsubmit="handleContactSubmit(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p>You can also email me directly at <a href="mailto:askchabadsois@gmail.com">askchabadsois@gmail.com</a></p>
+  </section>
+
+</main>
+<footer>
+  <p>&copy; 2025 Gedaliah Shaffer. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="https://www.youtube.com/@mistershaf9648" target="_blank" rel="noopener noreferrer">YouTube @mistershaf9648</a>
+    <a href="https://www.chabad.org" target="_blank" rel="noopener noreferrer">Chabad.org</a>
+  </div>
+</footer>
+
+<script>
+  // Dark mode toggle
+  const toggleBtn = document.querySelector('.toggle-dark');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+
+  // Contact form submission handler (fake)
+  function handleContactSubmit(e) {
+    e.preventDefault();
+    alert('Thank you for your message! I will get back to you soon.');
+    e.target.reset();
+  }
+</script>
 </body>
 </html>
